@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0B5CEF26CBE713009C9CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B5CEE26CBE713009C9CAB /* AppDelegate.swift */; };
+		4D0B5CF226CBE713009C9CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5CF026CBE713009C9CAB /* Main.storyboard */; };
+		4D0B5CF426CBE713009C9CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B5CF326CBE713009C9CAB /* ViewController.swift */; };
+		4D0B5CF626CBE714009C9CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5CF526CBE714009C9CAB /* Assets.xcassets */; };
+		4D0B5CFD26CBE714009C9CAB /* HNDark Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D0B5CFC26CBE714009C9CAB /* HNDark Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D0B5D0226CBE714009C9CAB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0B5D0126CBE714009C9CAB /* Cocoa.framework */; };
+		4D0B5D0526CBE714009C9CAB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B5D0426CBE714009C9CAB /* SafariWebExtensionHandler.swift */; };
+		4D0B5D0826CBE714009C9CAB /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5D0726CBE714009C9CAB /* _locales */; };
+		4D0B5D0A26CBE714009C9CAB /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5D0926CBE714009C9CAB /* images */; };
+		4D0B5D0C26CBE714009C9CAB /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5D0B26CBE714009C9CAB /* manifest.json */; };
+		4D0B5D0E26CBE714009C9CAB /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5D0D26CBE714009C9CAB /* background.js */; };
+		4D0B5D1026CBE714009C9CAB /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5D0F26CBE714009C9CAB /* content.js */; };
+		4D0B5D2426CBEAC7009C9CAB /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4D0B5D2326CBEAC7009C9CAB /* style.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D0B5CFE26CBE714009C9CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D0B5CE226CBE712009C9CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D0B5CFB26CBE714009C9CAB;
+			remoteInfo = "HNDark Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D0B5D1E26CBE714009C9CAB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4D0B5CFD26CBE714009C9CAB /* HNDark Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D0B5CEA26CBE713009C9CAB /* HNDark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNDark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0B5CED26CBE713009C9CAB /* HNDark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HNDark.entitlements; sourceTree = "<group>"; };
+		4D0B5CEE26CBE713009C9CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D0B5CF126CBE713009C9CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D0B5CF326CBE713009C9CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D0B5CF526CBE714009C9CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D0B5CF726CBE714009C9CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0B5CFC26CBE714009C9CAB /* HNDark Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HNDark Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0B5D0126CBE714009C9CAB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4D0B5D0426CBE714009C9CAB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		4D0B5D0726CBE714009C9CAB /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		4D0B5D0926CBE714009C9CAB /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		4D0B5D0B26CBE714009C9CAB /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		4D0B5D0D26CBE714009C9CAB /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		4D0B5D0F26CBE714009C9CAB /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		4D0B5D1726CBE714009C9CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0B5D1826CBE714009C9CAB /* HNDark_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HNDark_Extension.entitlements; sourceTree = "<group>"; };
+		4D0B5D2326CBEAC7009C9CAB /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D0B5CE726CBE712009C9CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0B5CF926CBE714009C9CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0B5D0226CBE714009C9CAB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D0B5CE126CBE712009C9CAB = {
+			isa = PBXGroup;
+			children = (
+				4D0B5CEC26CBE713009C9CAB /* HNDark */,
+				4D0B5D0326CBE714009C9CAB /* HNDark Extension */,
+				4D0B5D0026CBE714009C9CAB /* Frameworks */,
+				4D0B5CEB26CBE713009C9CAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D0B5CEB26CBE713009C9CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B5CEA26CBE713009C9CAB /* HNDark.app */,
+				4D0B5CFC26CBE714009C9CAB /* HNDark Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D0B5CEC26CBE713009C9CAB /* HNDark */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B5CED26CBE713009C9CAB /* HNDark.entitlements */,
+				4D0B5CEE26CBE713009C9CAB /* AppDelegate.swift */,
+				4D0B5CF026CBE713009C9CAB /* Main.storyboard */,
+				4D0B5CF326CBE713009C9CAB /* ViewController.swift */,
+				4D0B5CF526CBE714009C9CAB /* Assets.xcassets */,
+				4D0B5CF726CBE714009C9CAB /* Info.plist */,
+			);
+			path = HNDark;
+			sourceTree = "<group>";
+		};
+		4D0B5D0026CBE714009C9CAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B5D0126CBE714009C9CAB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D0B5D0326CBE714009C9CAB /* HNDark Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B5D0426CBE714009C9CAB /* SafariWebExtensionHandler.swift */,
+				4D0B5D1726CBE714009C9CAB /* Info.plist */,
+				4D0B5D1826CBE714009C9CAB /* HNDark_Extension.entitlements */,
+				4D0B5D0626CBE714009C9CAB /* Resources */,
+			);
+			path = "HNDark Extension";
+			sourceTree = "<group>";
+		};
+		4D0B5D0626CBE714009C9CAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B5D0726CBE714009C9CAB /* _locales */,
+				4D0B5D0926CBE714009C9CAB /* images */,
+				4D0B5D0B26CBE714009C9CAB /* manifest.json */,
+				4D0B5D0D26CBE714009C9CAB /* background.js */,
+				4D0B5D0F26CBE714009C9CAB /* content.js */,
+				4D0B5D2326CBEAC7009C9CAB /* style.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D0B5CE926CBE712009C9CAB /* HNDark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0B5D1F26CBE714009C9CAB /* Build configuration list for PBXNativeTarget "HNDark" */;
+			buildPhases = (
+				4D0B5CE626CBE712009C9CAB /* Sources */,
+				4D0B5CE726CBE712009C9CAB /* Frameworks */,
+				4D0B5CE826CBE712009C9CAB /* Resources */,
+				4D0B5D1E26CBE714009C9CAB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D0B5CFF26CBE714009C9CAB /* PBXTargetDependency */,
+			);
+			name = HNDark;
+			productName = HNDark;
+			productReference = 4D0B5CEA26CBE713009C9CAB /* HNDark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D0B5CFB26CBE714009C9CAB /* HNDark Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0B5D1B26CBE714009C9CAB /* Build configuration list for PBXNativeTarget "HNDark Extension" */;
+			buildPhases = (
+				4D0B5CF826CBE714009C9CAB /* Sources */,
+				4D0B5CF926CBE714009C9CAB /* Frameworks */,
+				4D0B5CFA26CBE714009C9CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HNDark Extension";
+			productName = "HNDark Extension";
+			productReference = 4D0B5CFC26CBE714009C9CAB /* HNDark Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D0B5CE226CBE712009C9CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4D0B5CE926CBE712009C9CAB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					4D0B5CFB26CBE714009C9CAB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 4D0B5CE526CBE712009C9CAB /* Build configuration list for PBXProject "HNDark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D0B5CE126CBE712009C9CAB;
+			productRefGroup = 4D0B5CEB26CBE713009C9CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D0B5CE926CBE712009C9CAB /* HNDark */,
+				4D0B5CFB26CBE714009C9CAB /* HNDark Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D0B5CE826CBE712009C9CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0B5CF626CBE714009C9CAB /* Assets.xcassets in Resources */,
+				4D0B5CF226CBE713009C9CAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0B5CFA26CBE714009C9CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0B5D0E26CBE714009C9CAB /* background.js in Resources */,
+				4D0B5D0A26CBE714009C9CAB /* images in Resources */,
+				4D0B5D0C26CBE714009C9CAB /* manifest.json in Resources */,
+				4D0B5D0826CBE714009C9CAB /* _locales in Resources */,
+				4D0B5D2426CBEAC7009C9CAB /* style.css in Resources */,
+				4D0B5D1026CBE714009C9CAB /* content.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D0B5CE626CBE712009C9CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0B5CF426CBE713009C9CAB /* ViewController.swift in Sources */,
+				4D0B5CEF26CBE713009C9CAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0B5CF826CBE714009C9CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0B5D0526CBE714009C9CAB /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D0B5CFF26CBE714009C9CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D0B5CFB26CBE714009C9CAB /* HNDark Extension */;
+			targetProxy = 4D0B5CFE26CBE714009C9CAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D0B5CF026CBE713009C9CAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D0B5CF126CBE713009C9CAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D0B5D1926CBE714009C9CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D0B5D1A26CBE714009C9CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4D0B5D1C26CBE714009C9CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HNDark Extension/HNDark_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WN849S894R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "HNDark Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marfay.HNDark.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D0B5D1D26CBE714009C9CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HNDark Extension/HNDark_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WN849S894R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "HNDark Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marfay.HNDark.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4D0B5D2026CBE714009C9CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HNDark/HNDark.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WN849S894R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = HNDark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marfay.HNDark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D0B5D2126CBE714009C9CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HNDark/HNDark.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WN849S894R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = HNDark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marfay.HNDark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D0B5CE526CBE712009C9CAB /* Build configuration list for PBXProject "HNDark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0B5D1926CBE714009C9CAB /* Debug */,
+				4D0B5D1A26CBE714009C9CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0B5D1B26CBE714009C9CAB /* Build configuration list for PBXNativeTarget "HNDark Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0B5D1C26CBE714009C9CAB /* Debug */,
+				4D0B5D1D26CBE714009C9CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0B5D1F26CBE714009C9CAB /* Build configuration list for PBXNativeTarget "HNDark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0B5D2026CBE714009C9CAB /* Debug */,
+				4D0B5D2126CBE714009C9CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D0B5CE226CBE712009C9CAB /* Project object */;
+}
